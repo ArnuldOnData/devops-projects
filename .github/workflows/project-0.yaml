@@ -3,8 +3,12 @@ name: Project-0
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'project-0/**'  # Trigger workflow if changes occur in this directory
   pull_request:
     branches: [ "main" ]
+    paths:
+      - 'project-0/**'  # Trigger workflow if changes occur in this directory
 
 jobs:
   build:
