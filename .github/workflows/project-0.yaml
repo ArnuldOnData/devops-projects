@@ -1,0 +1,36 @@
+name: Build and Run Docker Image and Save Output
+
+on:
+  push:
+    branches:
+      - main  # Specify the branch to watch for changes
+    paths:
+      - 'project-0/**'  # Only trigger when files in the project-0 directory change
+      
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Build Docker image
+      run: |
+        echo "Processing ${{ github.event.inputs.project_directory }}"
+
+        # Build Docker image
+        docker build -t project-image ${{ github.event.inputs.project_directory }}
+
+        # Run Docker container and save output
+        docker run project-image > ${{ github.event.inputs.project_directory }}/output.txt
+
+        # Add the output.txt file to git
+        git add ${{ github.event.inputs.project_directory }}/output.txt
+
+    - name: Commit output.txt
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git commit -m "Save output.txt for ${{ github.event.inputs.project_directory }}"
+        git push
