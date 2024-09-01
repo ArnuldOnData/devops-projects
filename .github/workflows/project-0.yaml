@@ -13,9 +13,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
+      working-directory: project-0
       run: |
-        echo "Processing ${{ github.event.inputs.project_directory }}"
+        echo "Processing in this directory: ${{ github.event.inputs.project_directory }}"
         docker build . --file Dockerfile --tag python:sample
+    - name: Run Docker container
         echo "Running Docker Container"
         docker run --rm python:sample > ${{ github.event.inputs.project_directory }}/output.txt
         # Add the output.txt file to git
