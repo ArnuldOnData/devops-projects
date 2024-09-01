@@ -1,14 +1,20 @@
-import platform
-import sys
+def factorial(n):
+    """Calculate the factorial of a non-negative integer n."""
+    if n < 0:
+        raise ValueError("Factorial is not defined for negative numbers")
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        result = 1
+        for i in range(2, n + 1):
+            result *= i
+        return result
 
-def print_system_info():
-    # Get and print the Python version
-    python_version = sys.version
-    print(f"Python Version: {python_version}")
+def main():
+    """Main function to execute the factorial calculator."""
+    number = 9
+    result = factorial(number)
+    print(f"The factorial of {number} is {result}.")
 
-    # Get and print the operating system name
-    os_name = platform.system()
-    print(f"Operating System: {os_name}")
-
-
-print_system_info()
+if __name__ == "__main__":
+    main()
