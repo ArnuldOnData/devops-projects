@@ -12,19 +12,25 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
     - name: Build the Docker image
       working-directory: project-0
       run: |
-        echo "Processing in this directory: ${{ github.event.inputs.project_directory }}"
+        echo "Processing in directory: project-0"
         docker build . --file Dockerfile --tag python:sample
+
     - name: Run Docker container
+      working-directory: project-0
+      run: |
         echo "Running Docker Container"
-        docker run --rm python:sample > ${{ github.event.inputs.project_directory }}/output.txt
+        docker run --rm python:sample > output.txt
         # Add the output.txt file to git
-        git add ${{ github.event.inputs.project_directory }}/output.txt
+        git add output.txt
+
     - name: Commit output.txt
+      working-directory: project-0
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git commit -m "Save output.txt for ${{ github.event.inputs.project_directory }}"
+        git commit -m "Save output.txt for project-0"
         git push
