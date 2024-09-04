@@ -1,1 +1,2 @@
-The factorial of 9 is 362880.
+Python Version: 3.12.5 (main, Aug 13 2024, 02:19:05) [GCC 12.2.0]
+Operating System: Linux
