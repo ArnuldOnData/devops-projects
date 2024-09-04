@@ -1,5 +1,0 @@
-7 Celsius = 44.60 Fahrenheit
-27 Celsius = 80.60 Fahrenheit
--4 Celsius = 24.80 Fahrenheit
-35 Celsius = 95.00 Fahrenheit
-10 Celsius = 50.00 Fahrenheit
