@@ -29,6 +29,14 @@ jobs:
         docker run --rm python:sample > output.txt
         git add output.txt
 
+    - name: Check for changes
+      run: |
+        git fetch origin main
+        if git diff --quiet origin/main; then
+          echo "No changes to push";
+          exit 0;
+        fi
+
     - name: Commit output.txt
       working-directory: project-0
       run: |
