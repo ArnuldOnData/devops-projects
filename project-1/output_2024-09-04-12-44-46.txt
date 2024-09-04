@@ -1,0 +1,5 @@
+-1 Celsius = 30.20 Fahrenheit
+0 Celsius = 32.00 Fahrenheit
+35 Celsius = 95.00 Fahrenheit
+18 Celsius = 64.40 Fahrenheit
+22 Celsius = 71.60 Fahrenheit
