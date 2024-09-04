@@ -30,6 +30,7 @@ jobs:
         echo "Output saved to output_${timestamp}.txt"
 
     - name: Commit and push the output file
+      working-directory: project-1
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
