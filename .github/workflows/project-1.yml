@@ -23,6 +23,7 @@ jobs:
         python-version: '3.12'
 
     - name: Run sample.py and save output
+      working-directory: project-1
       run: |
         timestamp=$(date +"%Y-%m-%d-%H-%M-%S")
         python sample.py > output_${timestamp}.txt

@@ -10,4 +10,3 @@ tempslist = [random.randint(-5, 35) for _ in range(5)]
 for item in tempslist:
     fahrenheit = celsius_to_fahrenheit(item)
     print(f"{item} Celsius = {fahrenheit:.2f} Fahrenheit")
-
