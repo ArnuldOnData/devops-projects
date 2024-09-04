@@ -1,5 +1,0 @@
-9 Celsius = 48.20 Fahrenheit
-31 Celsius = 87.80 Fahrenheit
-9 Celsius = 48.20 Fahrenheit
-12 Celsius = 53.60 Fahrenheit
--3 Celsius = 26.60 Fahrenheit
