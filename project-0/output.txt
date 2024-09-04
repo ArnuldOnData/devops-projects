@@ -1,0 +1,2 @@
+Python Version: 3.12.5 (main, Sep  4 2024, 06:05:23) [GCC 12.2.0]
+Operating System: Linux
