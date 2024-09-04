@@ -11,5 +11,4 @@ def print_system_info():
     print(f"Operating System: {os_name}")
 
 
-
 print_system_info()

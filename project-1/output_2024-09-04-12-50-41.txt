@@ -1,5 +1,0 @@
-10 Celsius = 50.00 Fahrenheit
-9 Celsius = 48.20 Fahrenheit
-2 Celsius = 35.60 Fahrenheit
-20 Celsius = 68.00 Fahrenheit
-5 Celsius = 41.00 Fahrenheit
