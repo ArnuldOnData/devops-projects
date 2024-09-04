@@ -1,0 +1,39 @@
+name: Project-1
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'project-1/**'  # Trigger workflow if changes occur in this directory
+
+jobs:
+  run-sample:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Run sample.py and save output
+      run: |
+        timestamp=$(date +"%Y-%m-%d-%H-%M-%S")
+        python sample.py > output_${timestamp}.txt
+        echo "Output saved to output_${timestamp}.txt"
+
+    - name: Commit and push the output file
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add output_*.txt
+        git commit -m "Save output from sample.py at $timestamp"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
