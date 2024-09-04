@@ -1,5 +1,0 @@
-6 Celsius = 42.80 Fahrenheit
-33 Celsius = 91.40 Fahrenheit
-21 Celsius = 69.80 Fahrenheit
-13 Celsius = 55.40 Fahrenheit
-26 Celsius = 78.80 Fahrenheit
