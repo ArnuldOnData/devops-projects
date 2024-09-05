@@ -5,7 +5,7 @@ An extremely minimal project to learn GitHub Actions
 
 ## Sample Python project to learn GitHub Actions
 
-This program convers converts a list of temperatures from Celsium to Fahrenheit. 
+This program convers convers a list of temperatures from Celsium to Fahrenheit. 
 
 
 ## What is Project-1
