@@ -1,0 +1,5 @@
+25 Celsius = 77.00 Fahrenheit
+1 Celsius = 33.80 Fahrenheit
+3 Celsius = 37.40 Fahrenheit
+16 Celsius = 60.80 Fahrenheit
+29 Celsius = 84.20 Fahrenheit
