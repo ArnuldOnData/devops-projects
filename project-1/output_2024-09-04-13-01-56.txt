@@ -1,5 +1,0 @@
-25 Celsius = 77.00 Fahrenheit
-18 Celsius = 64.40 Fahrenheit
--4 Celsius = 24.80 Fahrenheit
-12 Celsius = 53.60 Fahrenheit
-6 Celsius = 42.80 Fahrenheit

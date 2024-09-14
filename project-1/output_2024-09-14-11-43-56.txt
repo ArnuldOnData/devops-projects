@@ -1,5 +1,0 @@
-21 Celsius = 69.80 Fahrenheit
-22 Celsius = 71.60 Fahrenheit
-0 Celsius = 32.00 Fahrenheit
--1 Celsius = 30.20 Fahrenheit
-11 Celsius = 51.80 Fahrenheit
