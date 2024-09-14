@@ -30,6 +30,9 @@ jobs:
           python project-2/plot-iris.py
           ls -lh /home/runner/work/devops-projects/devops-projects
 
+      - name: Wait for file to be available
+        run: sleep 5
+        
       - name: Upload the output image
         uses: actions/upload-artifact@v3
         with:
