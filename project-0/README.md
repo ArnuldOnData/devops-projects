@@ -16,7 +16,8 @@ Wanted to learn what kind of GitHub Action template I need to write to:
 5. git push
 6. You will see the GitHub building the image and running the python program in "Actions" tab 
 7. You will see a new file called "output.txt" with the output from GitHub Action workflow
-8. Workflow is in the usual place: `devops-projects/.github/workflows/project-0.yaml`
+8. You will receive an email from GitHub too on whether the Actions failed/succeeded
+9. Workflow is in the usual place: `devops-projects/.github/workflows/project-0.yaml`
 
 
 
