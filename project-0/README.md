@@ -14,9 +14,9 @@ Wanted to learn what kind of GitHub Action template I need to write to:
 3. Last step changes the repo contents, and this a trigger for the GitHub Actions workflow I have written. You can also edit the sample.py file to do something else if you want
 4. git add and commit
 5. git push
-6. You will see a new file called "output.txt" with the output from GitHub Action workflow
-7. workflow is in the usual place: `devops-projects/.github/workflows/project-0.yaml`
-8. You can see the GitHub building the image and running the python program in "Actions" tab (Code --> Issues --> Pull requests --> Actions) 
+6. You will see the GitHub building the image and running the python program in "Actions" tab 
+7. You will see a new file called "output.txt" with the output from GitHub Action workflow
+8. Workflow is in the usual place: `devops-projects/.github/workflows/project-0.yaml`
 
 
 
