@@ -1,0 +1,5 @@
+24 Celsius = 75.20 Fahrenheit
+33 Celsius = 91.40 Fahrenheit
+3 Celsius = 37.40 Fahrenheit
+25 Celsius = 77.00 Fahrenheit
+2 Celsius = 35.60 Fahrenheit
