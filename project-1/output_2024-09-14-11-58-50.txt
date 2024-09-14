@@ -1,0 +1,5 @@
+5 Celsius = 41.00 Fahrenheit
+28 Celsius = 82.40 Fahrenheit
+-3 Celsius = 26.60 Fahrenheit
+26 Celsius = 78.80 Fahrenheit
+16 Celsius = 60.80 Fahrenheit
