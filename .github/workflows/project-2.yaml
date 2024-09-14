@@ -29,3 +29,14 @@ jobs:
         working-directory: project-2
         run: |
           python plot-iris.py
+      
+      - name: Commit and push the output file
+      working-directory: project-2
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add output_*.txt
+        git commit -m "Save output from sample.py at $timestamp"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
