@@ -1,0 +1,5 @@
+30 Celsius = 86.00 Fahrenheit
+17 Celsius = 62.60 Fahrenheit
+23 Celsius = 73.40 Fahrenheit
+29 Celsius = 84.20 Fahrenheit
+6 Celsius = 42.80 Fahrenheit
