@@ -3,7 +3,6 @@
 An extremely minimal project to learn GitHub Actions. Wanted to learn what kind of GitHub Action template I need to write to:
 - run a python program 
 - save the output to a plain text file
-- 
 
 ## What Does It Do
 A sample python program that converts a list of random temperatures from Celsius to Fahrenheit
