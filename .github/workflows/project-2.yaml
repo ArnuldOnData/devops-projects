@@ -28,6 +28,7 @@ jobs:
       - name: Run the Iris plot script
         run: |
           python project-2/plot-iris.py
+          ls -lh /home/runner/work
 
       - name: Upload the output image
         uses: actions/upload-artifact@v3
