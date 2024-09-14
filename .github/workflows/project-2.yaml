@@ -26,12 +26,6 @@ jobs:
           python -m pip install pandas scikit-learn matplotlib
 
       - name: Run the Iris plot script
+        working-directory: project-2
         run: |
           python project-2/plot-iris.py
-          ls -lh /home/runner/work
-
-      - name: Upload the output image
-        uses: actions/upload-artifact@v3
-        with:
-          name: iris-plot
-          path: project-2/output.png
