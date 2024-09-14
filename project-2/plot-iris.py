@@ -24,5 +24,5 @@ plt.title('Count of Each Species in the Iris Dataset', fontsize=14)
 plt.xlabel('Species', fontsize=12)
 plt.ylabel('Count', fontsize=12)
 
-# Show the plot
-plt.show()
+# Save the plot as a PNG file
+plt.savefig('output.png')
