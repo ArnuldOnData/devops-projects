@@ -1,0 +1,5 @@
+0 Celsius = 32.00 Fahrenheit
+-1 Celsius = 30.20 Fahrenheit
+16 Celsius = 60.80 Fahrenheit
+24 Celsius = 75.20 Fahrenheit
+13 Celsius = 55.40 Fahrenheit
