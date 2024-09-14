@@ -31,10 +31,10 @@ jobs:
           ls -lh /home/runner/work/devops-projects/devops-projects
 
       - name: Wait for file to be available
-        run: sleep 5
-        
+        run: sleep 3
+
       - name: Upload the output image
         uses: actions/upload-artifact@v3
         with:
           name: iris-plot
-          path: project-2/output.png
+          path: output.png
