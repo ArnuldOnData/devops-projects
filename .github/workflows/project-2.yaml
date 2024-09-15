@@ -35,8 +35,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sepal-length-vs-width.png
-          git commit -m "Save output from plot-iris.py at $timestamp"
+          timestamp=$(date +"%Y%m%d-%H%M%S")
+          mv sepal-length-vs-width.png sepal-length-vs-width-$timestamp.png
+          git add sepal-length-vs-width-$timestamp.png
+          git commit -m "Save plot with $timestamp"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

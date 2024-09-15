@@ -21,7 +21,7 @@ Wanted to learn what kind of GitHub Action template I need to write to:
 3. Make an edit e.g. add a comment to sample.py or remove the PNG file. Do anything small
 4. git add, commit and push
 5. As soon as you push, you will  see GitHub Actions running the python program in "Actions" tab 
-6. After Actions complete, you will see a new image file titled `sepal-length-vs-width.png` 
+6. After Actions complete, you will see a new image file titled `Irisi-Plot_xxxx.png` 
 7. Workflow is in the usual place: `devops-projects/.github/workflows/project-2.yaml`
 
 

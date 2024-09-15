@@ -2,7 +2,6 @@
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
 import pandas as pd
-from datetime import datetime
 
 # Load the Iris dataset
 iris = load_iris()
@@ -30,11 +29,8 @@ plt.ylabel('Sepal Width (cm)')
 plt.legend(title='Species')
 plt.grid(True)
 
-# Generate a timestamp for the filename
-timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-filename = f"Iris-Plot_{timestamp}.png"
 # Save the plot as a PNG file
-plt.savefig(filename)
+plt.savefig("sepal-length-vs-width.png")
 
 # Show the plot
 plt.show()
