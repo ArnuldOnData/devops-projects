@@ -22,7 +22,7 @@ Wanted to learn what kind of GitHub Action template I need to write to:
 4. git add, commit and push
 5. As soon as you push, you will  see GitHub Actions running the python program in "Actions" tab 
 6. After Actions complete, you will see a new image file titled `sepal-length-vs-width.png` 
-7. Workflow is in the usual place: `devops-projects/.github/workflows/project-1.yaml`
+7. Workflow is in the usual place: `devops-projects/.github/workflows/project-2.yaml`
 
 
 
