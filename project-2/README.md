@@ -5,20 +5,24 @@ An extremely minimal project to learn GitHub Actions
 
 ## Sample Python project to learn GitHub Actions
 
-This program convers convers a list of temperatures from Celsium to Fahrenheit. 
+This program plots sepal length vs width for very popular Iris dataset
 
 
-## What is Project-1
+## What is Project-2
 Wanted to learn what kind of GitHub Action template I need to write to:
-- run a python program 
-- save the output to a plain text file
+- access a scikit-learn dataset
+- do a matplotlib plot
+- save the plot as a PNG file in the repo
 
 
-## How To Use Project-1
-1. Just do a git pull on the repo
-2. You will see a new file called "output.txt" with the output from GitHub Action workflow
-3. workflow is in the usual place: `devops-projects/.github/workflows/project-1.yaml`
-4. You can see the GitHub Actions running the python program in "Actions" tab (Code --> Issues --> Pull requests --> Actions) 
+## How To Use Project-2
+1. Fork the repo
+2. clone the forked repo
+3. Make an edit e.g. add a comment to sample.py or remove the PNG file. Do anything small
+4. git add, commit and push
+5. As soon as you push, you will  see GitHub Actions running the python program in "Actions" tab 
+6. After Actions complete, you will see a new image file titled `sepal-length-vs-width.png` 
+7. Workflow is in the usual place: `devops-projects/.github/workflows/project-1.yaml`
 
 
 
