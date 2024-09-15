@@ -1,6 +1,5 @@
 # Import necessary libraries
 import matplotlib.pyplot as plt
-import seaborn as sns
 from sklearn.datasets import load_iris
 import pandas as pd
 
@@ -13,14 +12,25 @@ iris_df['species'] = iris.target
 species_names = {0: 'setosa', 1: 'versicolor', 2: 'virginica'}
 iris_df['species'] = iris_df['species'].map(species_names)
 
-# Set up plotting style
-sns.set(style="whitegrid")
+# Create a color map for the species
+colors = {'setosa': 'red', 'versicolor': 'green', 'virginica': 'blue'}
 
-# Scatter plot of Sepal Length vs Sepal Width
+# Scatter plot using matplotlib
 plt.figure(figsize=(8, 6))
-sns.scatterplot(x='sepal length (cm)', y='sepal width (cm)', hue='species', data=iris_df, palette='Set1')
-plt.title('Sepal Length vs Sepal Width')
 
-# Save the plot to a PNG file
+for species, color in colors.items():
+    subset = iris_df[iris_df['species'] == species]
+    plt.scatter(subset['sepal length (cm)'], subset['sepal width (cm)'], 
+                color=color, label=species)
+
+plt.title('Sepal Length vs Sepal Width')
+plt.xlabel('Sepal Length (cm)')
+plt.ylabel('Sepal Width (cm)')
+plt.legend(title='Species')
+plt.grid(True)
+
+# Save the plot as a PNG file
 plt.savefig("sepal-length-vs-width.png")
+
+# Show the plot
 plt.show()
