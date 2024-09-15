@@ -38,5 +38,5 @@ jobs:
           git add output.png
           git commit -m "Save output from plot-iris.py at $timestamp"
           git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
