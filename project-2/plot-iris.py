@@ -1,28 +1,26 @@
 # Import necessary libraries
 import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.datasets import load_iris
 import pandas as pd
 
 # Load the Iris dataset
-iris_data = load_iris()
-iris_df = pd.DataFrame(iris_data.data, columns=iris_data.feature_names)
-iris_df['species'] = iris_data.target
+iris = load_iris()
+iris_df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+iris_df['species'] = iris.target
 
-# Map the species target numbers to species names
-species_mapping = {0: 'setosa', 1: 'versicolor', 2: 'virginica'}
-iris_df['species'] = iris_df['species'].map(species_mapping)
+# Map species target numbers to actual species names
+species_names = {0: 'setosa', 1: 'versicolor', 2: 'virginica'}
+iris_df['species'] = iris_df['species'].map(species_names)
 
-# Count the occurrences of each species
-species_counts = iris_df['species'].value_counts()
+# Set up plotting style
+sns.set(style="whitegrid")
 
-# Create the plot using Matplotlib
-plt.figure(figsize=(8, 5))
-plt.bar(species_counts.index, species_counts.values, color=['blue', 'orange', 'green'])
+# Scatter plot of Sepal Length vs Sepal Width
+plt.figure(figsize=(8, 6))
+sns.scatterplot(x='sepal length (cm)', y='sepal width (cm)', hue='species', data=iris_df, palette='Set1')
+plt.title('Sepal Length vs Sepal Width')
 
-# Add title and labels
-plt.title('Count of Each Species in the Iris Dataset', fontsize=14)
-plt.xlabel('Species', fontsize=12)
-plt.ylabel('Count', fontsize=12)
-
-# Save the plot as a PNG file
-plt.savefig('output.png')
+# Save the plot to a PNG file
+plt.savefig("sepal-length-vs-width.png")
+plt.show()
