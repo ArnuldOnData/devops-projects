@@ -1,2 +1,3 @@
 # DevOps Projects
-My DevOps Projects
+
+Some DevOps projects I have created to show my skills
